@@ -14,7 +14,7 @@ resource "aws_instance" "web" {
   tags = {
     Name = random_pet.name.id
   }
-
+}
   resource "aws_security_group" "web-sg" {
     name        = "${random_pet.name.id}-sg"
   description = "Allow HTTP traffic"
